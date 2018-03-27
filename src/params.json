@@ -1,0 +1,9 @@
+{
+   "name" : "Soupbox &lt;hr&gt; Block",
+   "alias" : "hrblock",
+   "version" : 1,
+   "minAppVersion" : "2.4",
+   "components" : [ "hrblock-block" ],
+   "description" : "Editable &lt;HR&gr; block",
+   "logo" : "thumbnail.png"
+}
