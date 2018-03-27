@@ -4,6 +4,6 @@
    "version" : 1,
    "minAppVersion" : "2.4",
    "components" : [ "hrblock-block" ],
-   "description" : "Editable &lt;HR&gr; block",
+   "description" : "Editable &lt;HR&gt; block",
    "logo" : "thumbnail.png"
 }
