@@ -11,7 +11,7 @@ mbrApp.loadComponents(
 				hrStyleSolid:{type:"radio",title:"Solid",name:"hrstyle",default:!0},
 				hrStyleDotted:{type:"radio",title:"Dotted",name:"hrstyle",default:!1},
                 hrStyleDashed:{type:"radio",title:"Dashed",name:"hrstyle",default:!1},
-                paddingTop:{type:"range",title:"Padding(px)",min:0,max:80,step:10,default:10},
+                paddingTop:{type:"range",title:"Padding(px)",min:0,max:80,step:10,default:1},
                 bgColor:{type:"color",title:"Background Color",default:"#fff"},
 			},
             hrFullWidth:".hrfullwidth {min-width:0;}",
