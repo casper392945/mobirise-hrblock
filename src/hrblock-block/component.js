@@ -11,12 +11,17 @@ mbrApp.loadComponents(
 				hrStyleSolid:{type:"radio",title:"Solid",name:"hrstyle",default:!1},
 				hrStyleDotted:{type:"radio",title:"Dotted",name:"hrstyle",default:!1},
                 hrStyleDashed:{type:"radio",title:"Dashed",name:"hrstyle",default:!0},
-                paddingTop:{type:"range",title:"Padding(px)",min:0,max:80,step:10,default:10},
+                hrPaddingBlock:{type:"range",title:"Padding(px)",min:0,max:80,step:10,default:10},
                 bgColor:{type:"color",title:"Background Color",default:"#fff"},
 			},
+			
+			hrColor:".hrcolor {border-color:#000;}",
+			hrThickness:".hrthickness {border-top-width:3px;}",
             hrFullWidth:".hrfullwidth {min-width:0;}",
-			hrWidth:".hrblock {width:100%;margin:0;}",
-			paddingTop:".block {padding-bottom:0; padding-top:0;}",
+			hrWidth:"hr.hrblock {width:100%;padding:0;}",
+			hrStyle:".hrstyle {border-style:dotted;}",
+			hrPaddingBlock:".block {padding-bottom:10px; padding-top:10px;}",
+			
 			_onParamsChange:function(c,a,b){
 				
 				"hrFullWidth"==a&&b==true&&(
@@ -28,7 +33,6 @@ mbrApp.loadComponents(
 				"hrWidth"==a&&(
 					this.hrWidth=".hrblock {width:"+b+"%;}"
 				);
-				
 				"hrColor"==a&&(
 					this.hrColor=".hrcolor {border-color:"+b+";}"
 				);
@@ -44,9 +48,14 @@ mbrApp.loadComponents(
 				"hrThickness"==a&&(
 					this.hrThickness=".hrthickness {border-top-width:"+b+"px;}"
 				);
-				"paddingTop"==a&&(
-					this.paddingTop=".block {padding-bottom:"+b+"px; padding-top:"+b+"px;}"
+				"hrPaddingBlock"==a&&(
+					this.hrPaddingBlock=".block {padding-bottom:"+b+"px; padding-top:"+b+"px;}"
 				);
+			},
+			_styles: {
+				'hr': {
+					'margin': '0'
+				}
 			}
 		}
 	}
