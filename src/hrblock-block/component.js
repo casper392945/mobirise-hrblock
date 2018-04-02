@@ -4,8 +4,6 @@ mbrApp.loadComponents(
 			_group:"Article",
 			
 			_onLoadFromProject : function(originalComponent){
-                //alert(this._params.divtag);
-                this.col = '#f0f';
             },
 			
 			hrColor:"border-color:#000;",
@@ -27,7 +25,6 @@ mbrApp.loadComponents(
                 hrStyleDashed:{type:"radio",title:"Dashed",name:"hrstyle",default:!0},
                 hrPaddingBlock:{type:"range",title:"Padding(px)",min:0,max:80,step:10,default:10},
                 bgColor:{type:"color",title:"Background Color",default:"#fff"},
-                hrAnchor:{type:"text",title:"anchor",default:this._anchor}
 			},
 			
 			_onParamsShow: function(e,$params,$block) {
